@@ -216,7 +216,7 @@ footer h1{
         display: flex;
     }
 
-    span{
+    span.material-icons{
         display: none;
     }
 
