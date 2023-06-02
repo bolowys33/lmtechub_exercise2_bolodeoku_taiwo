@@ -178,6 +178,38 @@ main{
     grid-area: game-8;
 }
 
+footer{
+	background-color: #0B2543;
+	border: 2px solid black;
+	padding: 30px;
+}
+
+
+footer a{
+	text-decoration: none;
+	margin-top: 10px;
+	color: white;
+}
+
+footer h1{
+	color: white;
+	margin-bottom: 15px;
+}
+
+.foot{
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+
+.heading{
+	border-bottom: 2px solid white;
+	width: 50%;
+	margin: auto;
+	margin-top: 15px;
+	
+}
+
 @media screen and (min-width:768px) {
 
     nav{
@@ -196,6 +228,11 @@ main{
             "game-5 game-6"
             "game-7 game-8";
     }
+
+	footer{
+		display: grid;
+		grid-template-columns: repeat(3 , 1fr);
+	}
 }
 
 @media screen and (min-width:1024px) {
@@ -209,4 +246,8 @@ main{
                 "game-1 game-5 game-8 game-8"
                 "game-1 game-5 game-8 game-8";                
         }
+
+		footer{
+			grid-template-columns: repeat(5 , 1fr);
+		}
 }
