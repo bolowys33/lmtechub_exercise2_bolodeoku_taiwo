@@ -222,6 +222,7 @@ footer h1{
 
     main{
         grid-template-columns: 1fr 1fr;
+		grid-template-rows: repeat(4 , 200px);
         grid-template-areas: 
             "game-1 game-2"
             "game-3 game-4"
